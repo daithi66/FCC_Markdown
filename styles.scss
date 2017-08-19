@@ -1,0 +1,87 @@
+$lightbkgnd: #EEE;
+$mediumbkgnd: #666;
+$lightcolor: #FFF;
+$leftedge: #AAA;
+$lightborder: #CCC;
+$darkborder: #333;
+$altRow: #FFF;
+
+body {
+  font-size: 18px;
+}
+blockquote {
+  border-left: 8px solid $leftedge;
+  padding: 5px 10px;
+  background-color: $lightbkgnd;
+}
+table, th, td {
+  border: 1px solid $darkborder;
+}
+th, td {
+  padding: 2px 10px 2px 5px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  background-color: $mediumbkgnd;
+  color: $lightcolor;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+tr:nth-child(even) {
+  background-color: $lightbkgnd;
+}
+.altRow {
+  background-color: $altRow;
+}
+.normRow {
+  background-color: $lightbkgnd;
+}
+.codeBlock {
+  border: 1px solid $lightborder;
+  padding: 5px;
+  background-color: $lightbkgnd;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.code {
+  background-color: darken($lightbkgnd, 5%);
+  padding: 0 3px;
+}
+#wrapper {
+  width: 95%;
+  margin: 10px auto;
+}
+#leftSide {
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+#rightSide {
+  width: 48%;
+  margin: 1%;
+  float: left;
+  white-space: pre-wrap;
+}
+#txtBox {
+  width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  #leftSide {
+    width: 99%;
+    margin: 1%;
+    display: block;
+    float: none;
+  }
+  #rightSide {
+    width: 99%;
+    margin: 1%;
+    display: block;
+    float: none;
+    white-space: pre-wrap;
+  }
+}
